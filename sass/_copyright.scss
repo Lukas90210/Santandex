@@ -1,0 +1,22 @@
+.footer-copyright {
+    
+  .container {
+    background-color: #292a2e;
+    color: #fff;
+    border-top: 1px solid rgb(64, 68, 69);
+    .container-sm {
+      max-width: 1200px;
+
+      .footer-copyright-content {
+          padding: 40px 25px 20px 25px;
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+

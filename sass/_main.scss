@@ -1,0 +1,76 @@
+.main {
+  .container {
+    background-color: #fafafa;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    .container-sm {
+      background-color: #fafafa;
+      .card {
+        box-shadow: none;
+        width: 357px;
+        transition: 0.2s;
+        cursor: pointer;
+        padding: 0;
+        margin: 25px 15px;
+        text-align: center;
+        &:hover {
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        .card-image {
+          height: 180px;
+          background-size: cover;
+          border-radius: 5px;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          background-image: url("https://source.unsplash.com/random/800x600");
+          &-2 {
+            @extend .card-image;
+            background-image: url("https://source.unsplash.com/random/801x600");
+          }
+          &-3 {
+            @extend .card-image;
+            background-image: url("https://source.unsplash.com/random/802x600");
+          }
+        }
+        .card-text {
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          grid-template-rows: 70px 60px;
+          padding: 30px;
+          border-bottom: 1px solid #eee;
+          h3 {
+            line-height: 1.5;
+            font-size: 19px;
+          }
+          p {
+            line-height: 1.5;
+            font-size: 15px;
+            color: #555;
+          }
+        }
+        .btn-primary {
+          margin: 30px 0;
+          font-size: 15px;
+          &:hover {
+              background-color: #fafafa;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    .main-card-none-sm {
+      display: none;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .main {
+    .main-card-none-md {
+      display: none;
+    }
+  }
+}

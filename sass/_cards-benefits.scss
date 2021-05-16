@@ -1,0 +1,92 @@
+.cards-benefits {
+  .container-sm {
+    max-width: 1100px;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  &-lead {
+    text-align: center;
+    margin: 50px 0 30px 0;
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+    p {
+      font-size: 17px;
+    }
+  }
+  &-item {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 25px;
+  
+    .card {
+      display: grid;
+      grid-template-rows: 50% 50%;
+      padding: 30px;
+      align-items: start;
+      border-radius: 5px;
+      border: 1px solid #eee;
+      box-shadow: none;
+      margin: 0;
+      overflow: hidden;
+      cursor: pointer;
+      transition: .2s;
+      height: auto;
+      &:hover {
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        h3 {
+          color: var(--color-red);
+        }
+        
+      }
+      span {
+        font-size: 13px;
+        color: grey;
+        line-height: 2.5;
+      }
+      h3 {
+        font-weight: 300;
+        font-size: 19px;
+        transition: all .2s;
+      }
+      p {
+        font-size: 15px;
+        line-height: 1.4;
+        color: #555;
+        margin-bottom: 40px;
+      }
+    }
+  }
+  &-button {
+    margin: 40px 0;
+    .btn-primary {
+      font-size: 15px;
+    }
+  }
+}
+@media (max-width: 968px) {
+ .cards-benefits {
+   &-item {
+    grid-template-columns: repeat(2, 1fr);
+     #card-none-1 {
+       display: none;
+     }
+  
+   }
+ }
+}
+@media (max-width: 768px) {
+  .cards-benefits {
+    &-item {
+     grid-template-columns: 1fr;
+      #card-none-2 {
+        display: none;
+      }
+   
+    }
+  }
+ }

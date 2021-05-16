@@ -1,0 +1,23 @@
+:root {
+  --color-white: #fff;
+  --light-color: #f4f4f4;
+  --color-red: #ec0000; 
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
